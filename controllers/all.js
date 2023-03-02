@@ -3,11 +3,11 @@ const { default: axios } = require('axios');
 const allFun = async(req,res)=>{
    const month_name = req.query.month;
    
-   
 
-   const statistics_url = `http://localhost:3003/statistics?month=${month_name}`
-   const barchart_url = `http://localhost:3003/barchart?month=${month_name}`
-   const piechart_url = `http://localhost:3003/piechart?month=${month_name}`
+
+   const statistics_url = `https://distinct-hosiery-tuna.cyclic.app/statistics?month=${month_name}`
+   const barchart_url = `https://distinct-hosiery-tuna.cyclic.app/barchart?month=${month_name}`
+   const piechart_url = `https://distinct-hosiery-tuna.cyclic.app/piechart?month=${month_name}`
 
 
    const statistics_data = await axios.get(statistics_url)
