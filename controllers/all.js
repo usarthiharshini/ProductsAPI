@@ -1,7 +1,7 @@
 const { default: axios } = require('axios');
 
 const allFun = async(req,res)=>{
-   const month_name = req.param.month;
+   const month_name = req.params.month;
    
 
 
