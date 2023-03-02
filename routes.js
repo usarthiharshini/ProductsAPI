@@ -11,16 +11,26 @@ const allFun = require('./controllers/all');
 /* API to initialize the database */
 
 router.route('/').get(async (req,res)=>{
-     await Product.deleteMany();
+
+
+  try {
+    await Product.deleteMany();
  
 
-  const data = await  getData();
-    await  Product.insertMany(data);
-    res.status(200).send({
-        status: "success",
-        message: " Data initialized successfully",
-        data: data
-    });
+    const data = await  getData();
+      await  Product.insertMany(data);
+      res.status(200).send({
+          status: "success",
+          message: " Data initialized successfully",
+          data: data
+      });
+  } catch (error) {
+     res.status(500).json({
+      message: "Something went wrong"
+     })
+  }
+
+    
 });
 
 
