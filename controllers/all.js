@@ -5,9 +5,9 @@ const allFun = async(req,res)=>{
    
 
 
-   const statistics_url = `https://distinct-hosiery-tuna.cyclic.app/statistics?month=${month_name}`
-   const barchart_url = `https://distinct-hosiery-tuna.cyclic.app/barchart?month=${month_name}`
-   const piechart_url = `https://distinct-hosiery-tuna.cyclic.app/piechart?month=${month_name}`
+   const statistics_url = `https://distinct-hosiery-tuna.cyclic.app/statistics/${month_name}`
+   const barchart_url = `https://distinct-hosiery-tuna.cyclic.app/barchart/${month_name}`
+   const piechart_url = `https://distinct-hosiery-tuna.cyclic.app/piechart/${month_name}`
 
 
    const statistics_data = await axios.get(statistics_url)
