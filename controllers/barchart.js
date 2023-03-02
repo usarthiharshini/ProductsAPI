@@ -3,7 +3,7 @@ const Product = require('../model')
 const getNumberFromMonth = require('./month')
 
 const barchart = async function(req,res){
-    const month_name = req.query.month;
+    const month_name = req.params.month;
    const month_number=  getNumberFromMonth(month_name);
 
    const products = await  Product.aggregate(

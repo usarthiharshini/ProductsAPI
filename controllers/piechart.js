@@ -3,7 +3,7 @@ const getNumberFromMonth = require('./month')
 
 
 const piechart = async function(req,res){
-    const month_name = req.query.month;
+    const month_name = req.params.month;
     const month_number=  getNumberFromMonth(month_name);
   
   

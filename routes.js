@@ -30,7 +30,7 @@ router.route('/all/:month').get(allFun)
 
 /* API for statistics */
 
-router.route('/statistics').get(statisticsFun)
+router.route('/statistics/:month').get(statisticsFun)
   
 
 
@@ -38,11 +38,11 @@ router.route('/statistics').get(statisticsFun)
 
 /* API for bar chart */
 
-router.route('/barchart').get(barchart)
+router.route('/barchart/:month').get(barchart)
 
 /* API for pie chart */
 
-router.route('/piechart').get(piechart)
+router.route('/piechart/:month').get(piechart)
 
 
 
