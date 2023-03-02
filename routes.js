@@ -25,7 +25,7 @@ router.route('/').get(async (req,res)=>{
 
 
 
-router.route('/all').get(allFun)
+router.route('/all/:month').get(allFun)
 
 
 /* API for statistics */
