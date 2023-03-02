@@ -18,7 +18,7 @@ router.route('/').get(async (req,res)=>{
     await  Product.insertMany(data);
     res.status(200).send({
         status: "success",
-        message: "seed data added to database successfully",
+        message: " Data initialized successfully",
         data: data
     });
 });
