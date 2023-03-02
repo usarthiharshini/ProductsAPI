@@ -28,7 +28,7 @@ const statisticsFun = async function(req,res){
 
    
     res.send({
-        month : month_name,
+    month : month_name,
      statistics:{
       total_sale_amount: products[0].total_sale_amount,
       items_sold : products[0].total_sold,

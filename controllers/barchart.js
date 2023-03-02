@@ -62,7 +62,7 @@ const barchart = async function(req,res){
      }
     
    res.send({
-  
+    month : month_name,
      barchart : data
    });
 

@@ -39,6 +39,6 @@ const piechart = async function(req,res){
    
    
    
-    res.send({piechart:data});
+    res.send({month : month_name,piechart:data});
   }
   module.exports = piechart;

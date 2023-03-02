@@ -18,7 +18,7 @@ const allFun = async(req,res)=>{
  
 
 res.send(
-    {
+    { month : month_name,
      statistics:   statistics_data.data.statistics  ,
     barchart:    barchart_data.data.barchart,
     piechart:    piechart_data.data.piechart
